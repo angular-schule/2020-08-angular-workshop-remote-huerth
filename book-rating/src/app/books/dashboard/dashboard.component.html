@@ -1,6 +1,8 @@
 <br-book
   *ngFor="let b of books"
-  [book]="b"></br-book>
+  [book]="b"
+  (rateUp)="doRateUp($event)"
+  (rateDown)="doRateDown(b)"></br-book>
 
 <ul>
   <li *ngFor="let b of books; index as i">{{ i + 1 }} {{ b.title }}</li>
