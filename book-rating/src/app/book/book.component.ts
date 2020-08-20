@@ -9,11 +9,13 @@ import { Book } from '../shared/book';
 export class BookComponent implements OnInit {
 
   @Input() book: Book;
-  @Input() foo: string;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  getStars(): any[] {
+    return new Array(this.book.rating);
+  }
 }
