@@ -9,6 +9,8 @@
       </h2>
     </div>
 
+    <ng-content></ng-content>
+
     <div>
       <span *ngFor="let x of getStars()">⭐️</span>
     </div>
@@ -19,3 +21,5 @@
     <button class="btn btn-danger mr-2" (click)="doRateDown()"> – </button>
   </div>
 </div>
+
+{{ log() }}
