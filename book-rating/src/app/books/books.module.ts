@@ -7,6 +7,7 @@ import { BooksRoutingModule } from './books-routing.module';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { SearchComponent } from './search/search.component';
 import { CreateBookComponent } from './create-book/create-book.component';
+import { BookFormComponent } from './book-form/book-form.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CreateBookComponent } from './create-book/create-book.component';
     BookComponent,
     BookDetailsComponent,
     SearchComponent,
-    CreateBookComponent
+    CreateBookComponent,
+    BookFormComponent
   ],
   imports: [
     CommonModule,

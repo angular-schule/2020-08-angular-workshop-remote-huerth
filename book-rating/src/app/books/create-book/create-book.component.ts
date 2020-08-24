@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../shared/book';
 
 @Component({
   selector: 'br-create-book',
@@ -10,6 +11,10 @@ export class CreateBookComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  create(book: Book): void {
+
   }
 
 }
