@@ -19,9 +19,6 @@ import { CreateBookComponent } from './create-book/create-book.component';
   imports: [
     CommonModule,
     BooksRoutingModule
-  ],
-  exports: [
-    DashboardComponent
   ]
 })
 export class BooksModule { }

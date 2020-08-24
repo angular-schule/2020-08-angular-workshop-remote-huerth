@@ -6,10 +6,10 @@ import { SearchComponent } from './search/search.component';
 import { CreateBookComponent } from './create-book/create-book.component';
 
 const routes: Routes = [
-  { path: 'books', component: DashboardComponent },
-  { path: 'books/search', component: SearchComponent },
-  { path: 'books/create', component: CreateBookComponent },
-  { path: 'books/:isbn', component: BookDetailsComponent },
+  { path: '', component: DashboardComponent },
+  { path: 'search', component: SearchComponent },
+  { path: 'create', component: CreateBookComponent },
+  { path: ':isbn', component: BookDetailsComponent },
 ];
 
 @NgModule({
