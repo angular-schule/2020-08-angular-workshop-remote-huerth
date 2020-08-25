@@ -8,6 +8,8 @@ import { Book } from '../shared/book';
 })
 export class BookFormComponent implements OnInit {
 
+  myText = 'hallo';
+
   @Output() submitBook = new EventEmitter<Book>();
 
   constructor() { }
