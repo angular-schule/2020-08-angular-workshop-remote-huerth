@@ -13,7 +13,7 @@ export class AppComponent {
   constructor() {
 
     const myObs$ = new Observable(obs => {
-      obs.next('A');
+      obs.next(Math.random());
       obs.next('B');
       obs.next('C');
       obs.complete();
