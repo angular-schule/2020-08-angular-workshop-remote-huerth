@@ -1,4 +1,4 @@
-<ng-container *ngIf="books; else loading">
+<ng-container *ngIf="books$ | async as books">
   <br-book
     *ngFor="let b of books"
     [book]="b"
@@ -6,7 +6,7 @@
     (rateDown)="doRateDown(b)"></br-book>
 
   <ul>
-    <li *ngFor="let b of books; index as i">{{ i + 1 }} {{ b.title }}</li>
+    <li *ngFor="let b of books; index as i" >{{ i + 1 }} {{ b.title }}</li>
   </ul>
 
   <strong>Anzahl Bücher:</strong> {{ books.length }}
